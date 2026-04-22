@@ -1,5 +1,11 @@
 {
     "files.watcherExclude": {
-        "ignore/*": true,
+        // with only this setting, to-ignore is still watched
+        "to-ignore/**": true,
+
+        // uncomment below to properly unwatch A/to-ignore and files outside of the workspace
+        // "A/to-ignore/**": true,
+        // "B/**": true,
+        // "C/**": true
     }
 }
